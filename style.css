@@ -1,127 +1,212 @@
+/* Général */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
+/* Header */
 header {
-  background-color: #111;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
-}
-
-.logo {
-  font-size: 2em;
-  font-weight: bold;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  gap: 1.5em;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 nav a {
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
-  position: relative;
+  font-weight: bold;
 }
 
-.hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #1a1a1a, #333);
+nav a:hover {
+  color: #00bcd4;
 }
 
+/* Titre principal */
 .hero h1 {
-  font-size: 3em;
-  background: -webkit-linear-gradient(45deg, #fff, #ccc);
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(to right, #ffffff, #aaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.centered-title, .centered-text {
+/* Sections */
+.section {
+  padding: 2rem;
   text-align: center;
 }
 
+.centered-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.centered-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Informations de contact */
 .info-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-top: 20px;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
+.info-box {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+/* Lien vers les projets */
 .cta-section {
+  background-color: #1f1f1f;
+  padding: 2rem;
   text-align: center;
-  margin: 40px 0;
 }
 
 .cta-link {
-  color: #ff9900;
-  font-weight: bold;
+  color: #00bcd4;
+  font-size: 1.2rem;
   text-decoration: none;
-  font-size: 1.2em;
+  font-weight: bold;
 }
 
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+/* Réseaux sociaux */
 .socials {
   text-align: center;
-  margin: 30px 0;
+  padding: 1rem;
 }
 
 .socials a {
-  margin: 0 10px;
-  font-size: 30px;
-  color: white;
+  color: #f0f0f0;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  transition: color 0.3s;
 }
 
+.socials a:hover {
+  color: #00bcd4;
+}
+
+/* Footer */
 .footer {
-  background-color: #111;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  background-color: #1f1f1f;
+  padding: 2rem;
   flex-wrap: wrap;
 }
 
-.footer-left h1 {
-  font-size: 3em;
+.footer-left {
+  text-align: left;
+}
+
+.footer-initials {
+  font-size: 3rem;
   margin: 0;
+  color: #ffffff;
 }
 
 .footer-right {
+  max-width: 400px;
   text-align: right;
-  max-width: 300px;
-  margin-left: auto;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #222;
-  padding: 10px;
-  margin-top: 5px;
+/* Page de verrouillage BUT2 et BUT3 */
+.locked-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #121212;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.lock-container {
+  padding: 2rem;
+  border: 2px dashed #555;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
-.dropdown-content li {
-  list-style: none;
+.lock-container i {
+  color: #f44336;
+  margin-bottom: 1rem;
 }
 
-.dropdown-content a {
-  color: white;
+.lock-container h1 {
+  margin: 1rem 0 0.5rem;
+}
+
+.lock-container p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  color: #00bcd4;
   text-decoration: none;
-  display: block;
-  padding: 5px 10px;
+  font-weight: bold;
 }
 
-.dropdown-content a:hover {
-  background-color: #333;
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Projets BUT1 */
+.projets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.projet {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+.projet img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.projet h3 {
+  margin: 0.5rem 0;
+}
+
+.projet p {
+  color: #ccc;
 }
