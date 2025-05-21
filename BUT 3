@@ -1,89 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projets BUT3 SD</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>BUT3 SD</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <header>
-    <div class="logo">AC</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">ACCUEIL</a></li>
-        <li><a href="#apropos">À PROPOS DE MOI</a></li>
-        <li>
-          <a href="#projets">PROJETS ▾</a>
-          <ul>
-            <li><a href="but1.html">BUT1 SD</a></li>
-            <li><a href="but2.html">BUT2 SD</a></li>
-            <li><a href="but3.html">BUT3 SD</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="section">
-    <h2 class="centered-title">Mes projets de BUT3 SD</h2>
-    <div class="projects-grid">
-      <div class="project-item">
-        <img src="projet5.jpg" alt="Projet 5" />
-        <h3>Projet 5 - Intelligence Artificielle</h3>
-        <p>Projet avancé sur l'IA appliquée à l'analyse de données complexes.</p>
-      </div>
-      <div class="project-item">
-        <img src="projet6.jpg" alt="Projet 6" />
-        <h3>Projet 6 - Visualisation interactive</h3>
-        <p>Création d'outils de visualisation dynamique et interactive.</p>
-      </div>
-      <!-- Ajoute plus de projets ici -->
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-left">
-      <h1 class="footer-initials">AC</h1>
-      <p>BUT SD (Science des Données)</p>
-    </div>
-    <div class="footer-right">
-      <p>Passionné par la donnée et la prise de décisions éclairées.<br />Basé à Vannes, Bretagne.</p>
-      <p>Adresse : 8 Rue Montaigne, 56000 Vannes</p>
-    </div>
-  </footer>
-
-  <style>
-    .projects-grid {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 1rem 2rem;
-    }
-    .project-item {
-      background: #1e1e1e;
-      border-radius: 10px;
-      width: 280px;
-      padding: 1rem;
-      box-shadow: 0 0 10px #c40000;
-      text-align: center;
-    }
-    .project-item img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    .project-item h3 {
-      font-family: 'Oswald', sans-serif;
-      color: #c40000;
-      margin-bottom: 0.5rem;
-    }
-    .project-item p {
-      font-size: 0.9rem;
-    }
-  </style>
+<body class="locked-page">
+  <div class="lock-container">
+    <i class="fas fa-lock fa-4x"></i>
+    <h1>Accès non disponible</h1>
+    <p>Je suis actuellement en première année. Les projets de BUT3 SD ne sont pas encore disponibles.</p>
+    <a href="index.html" class="back-link">← Retour à l’accueil</a>
+  </div>
 </body>
 </html>
