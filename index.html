@@ -2,71 +2,183 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio AC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
+
   <header>
-    <div class="logo">AC</div>
+    <h1 href="index.html" class="logo">AC</h1>
     <nav>
-      <ul>
-        <li><a href="#accueil">ACCUEIL</a></li>
-        <li><a href="#apropos">À PROPOS DE MOI</a></li>
-        <li class="dropdown">
-          <a href="#">PROJETS ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="but1.html">BUT1 SD</a></li>
-            <li><a href="but2.html">BUT2 SD</a></li>
-            <li><a href="but3.html">BUT3 SD</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+      <a href="#hero">Accueil</a>
+      <a href="about.html">À propos de moi</a>
+      <a href="Adam Chakra CV.pdf">Mon CV</a>
+      <div class="has-dropdown" style="display: inline-block; position: relative;">
+        <a href="#">BUT SD ▾</a>
+        <div class="dropdown">
+          <a href="BUT SD1.html" target="_blank">BUT SD1</a>
+          <a href="BUT SD2.html">BUT SD2</a>
+          <a href="BUT3 SD.html">BUT SD3</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="hero" id="accueil">
-    <h1>Bienvenue sur mon Portfolio !</h1>
+  <section class="hero" id="hero">
+    <h2>Bienvenue dans mon Portfolio</h2>
+    <img src="Photo ADAM.jpg" alt="Photo de moi" class="hero-image" />
+    <a href="Adam Chakra CV.pdf" class="cv-button" download>Visualiser mon CV</a>
   </section>
 
   <section class="section" id="apropos">
-    <h2 class="centered-title">Ma formation</h2>
-    <p class="centered-text">Je suis étudiant en BUT Science des Données à l’IUT de Vannes.</p>
+    <h3>Ma formation</h3>
+    <p>
+      Après avoir obtenu un baccalauréat en Physique-Chimie avec mention Bien, j’ai choisi de poursuivre mes études en France pour intégrer une formation en adéquation avec les enjeux actuels du numérique.
+      Je suis aujourd’hui étudiant en première année de BUT Science des données à l’IUT de Vannes. Cette formation me permet de développer des compétences solides en programmation, statistiques, gestion de projet et analyse de données.
+      Nous utilisons des outils reconnus dans le monde professionnel, ce qui me donne une longueur d’avance pour la suite de mon parcours, que ce soit en alternance ou dans des projets concrets liés à la data.
+    </p>
 
-    <div class="info-grid centered-info">
-      <div class="info-box"><strong>Chef du département</strong><br>Gwénaël Bothorel</div>
-      <div class="info-box"><strong>Adresse</strong><br>8 Rue Montaigne<br>56000 Vannes</div>
-      <div class="info-box"><strong>Email</strong><br>iut-vannes@univ-ubs.fr</div>
-      <div class="info-box"><strong>Téléphone</strong><br>02 97 87 10 00</div>
+    <div class="cards">
+      <div class="card">
+        <strong>Chef du département</strong><br>
+        Charlaine Gardan
+      </div>
+      <div class="card">
+        <strong>Adresse</strong><br>
+        8 Rue Michel de Montaigne,<br>56000 Vannes
+      </div>
+      <div class="card">
+        <strong>Email</strong><br>
+        iutp.sd@univ-vannes.fr
+      </div>
+      <div class="card">
+        <strong>Téléphone</strong><br>
+        02 97 62 64 64
+      </div>
     </div>
   </section>
 
-  <section class="cta-section">
-    <p>SAE<br><a href="but1.html" class="cta-link">Jetez un coup d'œil sur mes projets !</a></p>
+  <section class="section" id="cv">
+    <h3>Mon CV</h3>
+    <p>Téléchargez mon CV pour en savoir plus sur mon parcours et mes compétences.</p>
+    <a href="Adam Chakra CV.pdf" download class="cv-button" >Télécharger mon CV</a>
+
   </section>
 
-  <section class="section" id="bilan">
-    <h2 class="centered-title">Mon bilan personnel</h2>
-    <p>Ce paragraphe sera rempli plus tard avec mon retour d’expérience sur l’année.</p>
-  </section>
-
-  <section class="socials">
-    <a href="https://www.instagram.com/adam_chakra/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/adam-chakra-3b6956327/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-left">
-      <h1 class="footer-initials">AC</h1>
-      <p>BUT SD (Science des Données)</p>
+  <section class="section" id="butsd1">
+    <h3>Projets BUT SD1</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="SAE106/SAE106 photo1.png" alt="SAE106" />
+        <h4>Projet 1</h4>
+        <p>Analyse d’Enquête pour le CPIE : Comprendre la Notoriété et l’Image auprès des Habitants</p>
+        <a href="BUT SD1.html" class="btn">Voir plus</a>
+      </div>
+      <div class="project-card">
+        <img src="SAE 206/SAE206 photo1.png" alt="SAE206" />
+        <h4>Projet 2</h4>
+        <p>Création d'une fiche de synthèse personnalisée pour des patients – Collaboration AP-HP.</p>
+        <a href="BUT SD1.html" class="btn">Voir plus</a>
+      </div>
+      <!-- Ajoute autant de projets que tu veux -->
     </div>
-    <div class="footer-right">
-      <p>Passionné par la donnée et la prise de décisions éclairées. <br> Basé à Vannes, Bretagne.</p>
-      <p>Adresse : 8 Rue Montaigne, 56000 Vannes</p>
+  </section>
+  
+
+  <section class="section" id="competences">
+    <h3>Mes compétences</h3>
+    <p class="intro-competences">
+      Voici un aperçu de mes compétences clés dans le domaine de la data :
+    </p>
+    <div class="radar-wrapper">
+      <canvas id="radarChart" width="450" height="450"></canvas>
     </div>
-  </footer>
+  </section>
+ 
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('radarChart').getContext('2d');
+    const radarChart = new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Python', 'R', 'SQL', 'Power BI', 'Excel', 'VBA', 'Access'],
+        datasets: [{
+          label: 'Niveau de compétence (%)',
+          data: [70, 75, 85, 85, 100, 55, 86],
+          backgroundColor: 'rgba(255, 255, 255, 0.1)',
+          borderColor: '#ff4d4d',
+          pointBackgroundColor: '#ff4d4d',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: '#ff4d4d'
+        }]
+      },
+      options: {
+        scales: {
+          r: {
+            suggestedMin: 0,
+            suggestedMax: 100,
+            ticks: {
+              color: 'black',
+              backdropColor: 'transparent',
+              stepSize: 20
+            },
+            grid: {
+              color: '#666'
+            },
+            pointLabels: {
+              color: 'black', // ← les noms comme "Python", "SQL", etc.
+              font: {
+                size: 14
+              }
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            labels: {
+              color: 'white'
+            }
+          }
+        }
+      }
+    });
+  </script>
+  
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <footer id="contact">
+      <p>&copy; 2025 AC | Portfolio personnel</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/adam-chakra-3b6956327/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/adam_chakra/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+    
+        
+
+
+
+
+    
 </body>
 </html>
